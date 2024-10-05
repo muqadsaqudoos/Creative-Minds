@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains the portfolio website for **Creative Minds**, a fictional design agency created as part of our web development assignment.
+This repository contains the portfolio website for **Creative Minds**, a fictional design agency created as part of our *Introducion to Data Science* assignment.
 
 ## Team Members
 
