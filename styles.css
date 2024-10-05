@@ -4,31 +4,41 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background: #f9f9f9; /* Light background for better contrast */
+    background: #f9f9f9;
 }
 
 .container {
     width: 90%;
-    max-width: 1200px; /* Max width for better layout on larger screens */
+    max-width: 1200px; 
     margin: auto;
     overflow: hidden;
 }
 
 header {
-    background: #444; /* Darker header */
+    background: #444;
     color: #fff;
     padding: 20px 0;
-    position: sticky; /* Make header sticky */
+    position: sticky;
     top: 0;
-    z-index: 1000; /* Ensures it stays on top */
+    z-index: 1000;
+    margin-bottom: 0; 
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both; 
 }
 
 header h1 {
     float: left;
-    font-size: 2em; /* Larger font size */
+    font-size: 2em;
 }
 
 nav {
@@ -41,52 +51,76 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-left: 30px; /* More spacing between menu items */
+    margin-left: 30px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: 600; /* Bold links */
-    transition: color 0.3s; /* Smooth transition for hover */
+    font-weight: 600;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #e8491d; /* Change color on hover */
+    color: #e8491d;
 }
 
 .hero {
     background: url('assets/hero-bg.jpg') no-repeat center center/cover;
     color: #fff;
-    padding: 150px 0; /* More padding for the hero section */
+    padding: 150px 0;
     text-align: center;
+    margin: 0; 
+    padding-top: 0;
+    min-height: 50vh;
 }
 
+
 .hero-content {
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    background: rgba(0, 0, 0, 0.5);  
     padding: 40px;
-    border-radius: 10px; /* Rounded edges for hero content */
+    border-radius: 10px;
 }
 
 .btn {
     background: #e8491d;
     color: #fff;
-    padding: 12px 25px;
+    padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s; /* Smooth transition for hover */
+    margin-top: 20px;
+    display: inline-block;
+    transition: background 0.3s;
 }
 
 .btn:hover {
-    background: #d03d1a; /* Darker shade on hover */
+    background: #d03d1a;
 }
 
 h2 {
     margin: 30px 0;
     text-align: center;
-    font-size: 2em; /* Larger font size for headings */
-    color: #333; /* Darker text for better contrast */
+    font-size: 2em;
+    color: #333;
 }
+
+
+section {
+    position: relative;
+    padding-top: 80px;
+    margin-top: -80px; 
+}
+
+section h2 {
+    margin-top: 0; 
+}
+
+
+#services, #portfolio, #team {
+    padding-top: 120px; 
+    margin-top: -120px; 
+}
+
 
 .services-grid, .portfolio-grid, .team-grid {
     display: flex;
@@ -101,12 +135,12 @@ h2 {
     border-radius: 8px;
     text-align: center;
     width: calc(30% - 20px);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    transition: transform 0.3s; /* Smooth scale on hover */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
 }
 
 .service:hover, .portfolio-item:hover, .team-member:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
+    transform: translateY(-5px);
 }
 
 .service h3, .portfolio-item h3, .team-member h3 {
@@ -116,11 +150,11 @@ h2 {
 .portfolio-item img, .team-member img {
     max-width: 100%;
     height: auto;
-    border-radius: 5px; /* Rounded edges for images */
+    border-radius: 5px;
 }
 
 footer {
-    background: #444; /* Dark footer */
+    background: #444;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -139,13 +173,13 @@ form input, form textarea {
     width: 80%;
     padding: 12px;
     margin: 10px 0;
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 5px; /* Rounded edges */
-    transition: border-color 0.3s; /* Smooth transition for focus */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
 }
 
 form input:focus, form textarea:focus {
-    border-color: #66afe9; /* Highlight border on focus */
-    outline: none; /* Remove default outline */
-    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); /* Add subtle shadow */
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
 }
