@@ -29,7 +29,7 @@ We had so much fun pushing and pulling code on GitHub, and it really made us rea
 
 1. **Pushing Changes**: We struggled a lot with pushing our changes to the repository. Sometimes we had conflicts, and it was frustrating trying to figure out how to resolve them. There were times when we thought we lost our work because we didn't know how to handle merge conflicts properly.
    
-2. **Merging Branches**: Merging our branches was another challenge. We had to make sure that the changes from both of us didn’t overwrite each other’s work. We had to communicate a lot to avoid overlapping changes.
+2. **Merging Branches**: Merging our branches was another challenge. We had to make sure that the changes from both of us didn’t overwrite each other’s work. We had to communicate a lot to avoid overlapping changes and some conflicts were to be resolved manually.
    
 3. **Pull Requests**: Understanding how to create and review pull requests was tricky initially. We kept asking each other if we were doing it right!
 
